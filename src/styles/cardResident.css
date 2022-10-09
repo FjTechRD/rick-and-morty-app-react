@@ -1,0 +1,71 @@
+:root {
+  --mainColor: #05292e;
+  --secundaryColor: #062226;
+  --hoverColor: #008394;
+  --activeColor: #00c2db;
+}
+
+.resident__card {
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: var(--secundaryColor);
+  width: 100%;
+  max-width: 30rem;
+}
+
+.resident__header {
+  position: relative;
+}
+
+.resident__status {
+  border-radius: 0 2rem 2rem 0;
+  padding: 0.8rem 1.8rem;
+  top: 2rem;
+  position: absolute;
+  color: #fff;
+  display: flex;
+  gap: 1rem;
+  background-color: var(--secundaryColor);
+}
+
+.resident__status-circle {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  width: 1.5rem;
+  background-color: red;
+}
+
+.resident__info {
+  color: #fff;
+}
+
+.resident__name {
+  padding: 1rem;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.resident__data {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+}
+
+.resident__data span {
+  color: #808080;
+  text-transform: uppercase;
+}
+
+.Dead {
+  background-color: red;
+}
+
+.Alive {
+  background-color: green;
+}
+
+.unknown {
+  background-color: #aaa;
+}

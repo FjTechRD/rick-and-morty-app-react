@@ -1,0 +1,174 @@
+:root {
+  --mainColor: #05292e;
+  --secundaryColor: #062226;
+  --hoverColor: #008394;
+  --activeColor: #00c2db;
+}
+/*? ---------------- GENERALES ---------------- */
+
+.App {
+  background-color: var(--mainColor);
+}
+
+/*? ---------------- HEADER ---------------- */
+
+.header {
+  background-image: url(../assets/img/rickandmortyheaderback.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__logo {
+  width: 70%;
+}
+
+/*? ---------------- SEEKER ---------------- */
+
+.header__seeker {
+  position: relative;
+}
+
+.header__search {
+  border: none;
+  padding: 0.8rem;
+  background-color: var(--secundaryColor);
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.header__sugested {
+  position: absolute;
+  background-color: var(--mainColor);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/*! ---------------- MAIN CONTENT ---------------- */
+
+@media (min-width: 768px) {
+  .container {
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    min-height: 100vh;
+    margin: 0 auto;
+  }
+}
+
+.container {
+  background-color: var(--mainColor);
+  min-height: 100vh;
+}
+
+/*? ---------------- LOCATION ---------------- */
+
+.location {
+  background-color: var(--secundaryColor);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location__title {
+  color: #fff;
+  padding-bottom: 2rem;
+}
+
+.location__info {
+  color: #fff;
+  display: flex;
+  gap: 2rem;
+}
+
+.location__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.location__element span {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--activeColor);
+}
+
+@media (min-width: 768px) {
+  .location {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .location__title {
+    font-size: 3.5rem;
+  }
+  .location__info {
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    gap: 4rem;
+  }
+}
+/*? ---------------- RESIDENT HOLDER ---------------- */
+
+.resident {
+  margin-top: 2rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*? ---------------- Footer ---------------- */
+
+.footer {
+  margin-top: 3rem;
+  background-color: var(--secundaryColor);
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer span:hover {
+  color: var(--activeColor);
+}
